@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Termianal ChamP</title>
+  </head>
+  <body>
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissable fade show" role="alert">
+    <strong> Message:</strong> {{message}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true"> &times;</span>
+  </button>
+  </div>
+  {% endfor %}
+
+    <h3> Welcome to Terminal Champ<h3>
+
+    {% if user.is_authenticated %}
+    <h3> Hello   {{ fname }} </h3>
+    <h4>You're Successfully Logged in </h4>
+    <p> Here we teach you linux, Don't worry if you don't know anything about linux and if you dont have the system  that
+      supports linux , you don't have to install any linux systems we  will be providing linux machine in your browser through which you can get hands on skills
+      in linux , and we will teach you from scratch trust us we will make you the <strong>Terminal champian </strong>
+    </p>
+
+    <p>  <a href="https://ap-northeast-1.console.aws.amazon.com/ec2-instance-connect/ssh?connType=standard&instanceId=i-0ba18fd8fb795ce09&osUser=ubuntu&region=ap-northeast-1&sshPort=22#/" target="_blank">Load My  Linux </a> </p>
+
+    <button type="submit"><a href="/signout">Signout</a></button>
+     {% else %}
+    <button type="submit"> <a href="/signup">Signup</a></button>
+    <button type="submit"><a href="/signin">signin</a></button>
+    {% endif %}
+  </body>
+</html>

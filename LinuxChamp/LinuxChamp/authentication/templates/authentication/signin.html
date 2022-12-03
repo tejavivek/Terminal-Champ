@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+    <!-- <link rel="stylesheet" type="text/css" href="static/CSS/style.css"> -->
+    <center>
+      <img src="{% static 'Images/trs.png' %}" alt="Linux Champ" width="200" height="200">
+     </center>
+  </head>
+  <body>
+
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissable fade show" role="alert">
+    <strong> Message:</strong> {{message}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true"> &times;</span>
+  </button>
+
+  </div>
+  {% endfor %}
+  <center><div class="login-form">
+    <h1> Sign In <h1>
+ <form action="/signin" method="POST">
+   {% csrf_token%}
+   <label for=""></label>
+   <input type="text" id="username" name="username" placeholder="Enter Username">
+
+    <br>
+   <label for=""></label>
+   <input type="password" id="pass1" name="pass1" placeholder="Enter your Passwprd">
+    <br>
+
+
+
+  <button type="submit">Sign In </button>
+
+ </form> </center>
+ </body>
+</div>
+ <script src=""> async defer  </script>
+     </body>
+</html>
