@@ -1,0 +1,25 @@
+body{
+    background-image: url("/static/Images/whitepaper.jpg");
+
+}
+.whoami{
+    width:400px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.pwd{
+    width:400px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.ls{
+    width:400px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

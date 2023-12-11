@@ -1,0 +1,36 @@
+.login-form {
+    width: 250px;
+    height: 330px;
+    top: 30%;
+    left: 40%;
+    /* transform: translate(-50%,-50%); */
+    background:rgb(17, 17, 17);
+    color:white;
+    font-size:1.5em;
+    box-sizing:border-box;
+    border-radius:50px;
+    /* padding-top: 10px; */
+    position:absolute;
+    text-align: center;
+
+    
+   
+}
+body{    
+    background: url('/static/Images/whitepaper.jpg');
+
+    
+}
+.button{
+    background-color: orange;
+    height:30px;
+    width:90px;
+    margin: 4px;
+    margin-top:12px;
+    font-size:15px;
+    border-radius:25px;
+    text-align: center;
+}
+.button: :hover{
+    
+}

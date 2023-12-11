@@ -1,0 +1,134 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/blog.css' %}">
+
+</head>
+<body>
+    <h1 class="linuxhead">What is Linux?</h1>
+  <img class="image" src="/static/Images/linus trovals.jpeg">
+    <p> Linux is a kernel, kernel is a heart of operating system. Linus trovals a university student  inspired from unix and started
+        to create a   kernel of an open source operating system which  is later formed as linux. 
+        Remember that linux is a kernel, where from that kernel later different  distros i.e operating  systems  were developed , distros are formed when 
+        some set of researchers who works on specific domain creates an operating system out of the terminal then Operating System or Distro is created, For example folks
+        at Offensive security who works on hacking and pentesting created an operating system for hackers and pentesters which is  <a href="https://www.kali.org/">Kali linux</a>
+        But beyond free, Linux is open source, which means anyone can take the code base and reshape it into anything they want. Practically, this has spawned a vast ecosystemof specialty Linux distributions. A distribution (sometimes shortened to distro) is a customized stack of software that’s packaged along with the Linux kernel and distributed
+        with tools for installing a working version of Linux of user computers
+      </p>
+      <table>
+        <tr>
+          <th><strong>Purpose</strong></th>
+          <th><strong>Distribution</strong></th>
+        </tr>
+        <tr>
+          <td>Cyber Security</td>
+          <td>kali Linux</td>
+        </tr>
+        <tr>
+          <td>consumer desktop</td>
+          <td>Mint, Elementary Os</td>
+        </tr>
+        <tr>
+          <td>Lightweight</td>
+          <td>puppy Linux, LXLE</td>
+        </tr>
+        <tr>
+          <td>Internet of Things </td>
+          <td>Snappy Ubuntu Core</td>
+    
+        </tr>
+        <tr>
+          <td>Enterprise Server Room</td>
+          <td>Centos(community version of Red hat Enterprise Linux,OpenSUSE(community version of SUSE</td>
+        </tr>
+      </table>
+      <h3>Getting Started </h3>
+      <p>
+          Let's us start with understanding basics of linux i.e  in this section we will teach you basic surving skills in Linux
+          such as 
+          <ol>
+          <li>The UNIX Filesystem Heierarchy Standard (Including pseudeo file systems), </li>
+          <li>Navigation(ls, pwd, and cd,)</li>
+          <li>File management tools(cat,less,touch,mkdir,rmdir and mv)</li>
+          <li>Sudo </li>
+          <li>where to turn for help(journalctl, man, info) </li>
+        </ol>
+      </p>
+      <p>
+         Before  explain above topics i need you to understand some key terminologies they are 
+         <ol>
+          <li><strong>Binaries:</strong> This term refers to files that can be executed, similar to executables in
+            Windows. Binaries generally reside in the /usr/bin or usr/sbin directory and include
+            utilities such as ps, cat, ls, and c</li>
+            <li><strong>Case sensitivity: </strong> Unlike Windows, Linux is case sensitive. This means that Desktop is
+              different from desktop, which is different from DeskTop. Each of these would represent
+              a different file or directory name. Many people coming from a Windows environment
+              can find this frustrating. If you get the error message “file or directory not found” and
+              you are sure the file or directory exists, you probably need to check your case.
+              </li>
+              <li>
+                <strong>Directory:</strong> This is the same as a folder in Windows. A directory provides a way of
+                  organizing files, usually in a hierarchical manner
+              </li>
+              <li>
+                <strong>Home: </strong> Each user has their own /home directory, and this is generally where files you
+                create will be saved by default.
+              </li>
+              <li>
+                <strong>Root:</strong> Like nearly every operating system, Linux has an administrator or superuser
+                 account, designed for use by a trusted person who can do nearly anything on the
+                system. This would include such things as reconfiguring the system, adding users, and
+                 changing passwords. In Linux, that account is called root. 
+              </li>
+              <li>
+                <strong>Shell: </strong>This is an environment and interpreter for running commands in Linux. The
+                most widely used shell is bash, which stands for Bourne­again shell, but other popular
+                shells include the C shell and Z shell.
+              </li>
+              <li>
+                <strong>Terminal: </strong>This is a command line interface (CLI).
+
+              </li>
+         </ol>
+         
+      </p>
+      <h4> Linux File Sytem</h4>
+      <p> Before understanding what is linux file system and how it works let us understand about what is file System?
+          We can see it as Index or Data table that creates apparent connections between individual files  and group of iles 
+          wiht identifiable locations on a disk   Why would you need an index? A digital storage device like a hard drive or USB device isn’t
+          divided into physical divisions that can be used as
+          organizing folders (or directories, as they’re known
+          in Linux circles). One particular file can reside in
+          a location on the actual media that’s a great distance away from another, nearly identical file created minutes or seconds apart, and all the parts of
+          a single file might not be contiguous. Not only
+          that, a file’s geographic location on the disk won’t necessarily remain static over time.
+           If you want your data to be reliably retrievable, you’ll need some kind of index that
+          can consistently point you to the resources you’re after. A file system uses such an
+          index to provide the appearance of an organized set of directories and files within a
+          single disk division known as a partition
+      </p>
+      <img class="Filesystem" src="/static/Images/Filestructure.jpg"> 
+      <p>
+        <ol>
+        <li> <strong>/root: </strong>The home directory of the all­powerful root user </li>
+<li><strong>/etc: </strong> Generally contains the Linux configuration files—files that control when and how
+programs start up </li>
+<li><strong>/home: </strong> The user’s home directory</li>
+<li><strong>/mnt: </strong>Where other filesystems are attached or mounted to the filesystem </li>
+<li><strong>/media: </strong>Where CDs and USB devices are usually attached or mounted to the filesystem</li>
+<li><strong>/bin: </strong>Where application binaries (the equivalent of executables in Microsoft Windows)
+reside</li>
+<li><strong>/lib:</strong> Where you’ll find libraries (shared programs that are similar to Windows DLLs)</li>
+</ol>
+      </p>
+
+      <center><a href="page2">Next Page</a></center>
+      
+
+</body>
+</html>
